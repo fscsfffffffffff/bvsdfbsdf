@@ -75,14 +75,7 @@ body{
     margin: 0;
     padding: 0;
     color: black;
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #e4251d), color-stop(100%, #e2e1e1));
-    background-image: -webkit-linear-gradient(135deg, #e4251d, #e2e1e1);
-    background-image: -moz-linear-gradient(45deg, #e4251d, #e2e1e1);
-    background-image: -ms-linear-gradient(45deg, #e4251d 0, #e2e1e1 100%);
-    background-image: -o-linear-gradient(45deg, #e4251d, #e2e1e1);
-    background: linear-gradient(135deg, #e4251d, #e2e1e1); /* Initial fallback gradient */
-            transition: background 0.5s ease;
+    
 }
 
 div{
@@ -882,19 +875,6 @@ let countdownValue = 150; // Initial countdown value
 
 
 </script>
-  <script>
-        function getRandomColor() {
-            return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
-        }
 
-        function setRandomGradient() {
-            const color1 = getRandomColor();
-            const color2 = getRandomColor();
-            document.body.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
-        }
-
-        // Set a random gradient on page load
-        window.onload = setRandomGradient;
-    </script>
 </body>
 </html>
